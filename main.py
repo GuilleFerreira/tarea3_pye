@@ -56,9 +56,11 @@ def ejercicio(dist, size):
     varianza = statistics.variance(distribucion)
     
     plt.boxplot(distribucion)
+    plt.title(f"Distribución {tipoDist} - Tamaño: {size}")
     plt.show()
 
     plt.hist(distribucion, color = 'orange', bins = int(180/5))
+    plt.title(f"Distribución {tipoDist} - Tamaño: {size}")
     plt.show()
     
     print("==========================================================")
@@ -80,7 +82,7 @@ def ejercicio(dist, size):
 #   Ejercicio 1
 #====================
 
-#ejercicio(1,size = 100)
+ejercicio(1,size = 100)
 #ejercicio(1,size = 1000)
 #ejercicio(1,size = 10000)
 #ejercicio(1,size = 100000)
