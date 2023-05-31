@@ -41,7 +41,7 @@ def ejercicio(dist, size):
         tipoDist = "Binomial"
         distribucion = generarDistribucionBinomial(size)
     elif (dist == 2):
-        tipoDist = "Geometrica"
+        tipoDist = "Geométrica"
         distribucion = generarDistribucionGeometrica(size)
     elif (dist == 3):
         tipoDist = "Poisson"
