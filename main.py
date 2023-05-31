@@ -3,6 +3,7 @@ from scipy.stats import geom
 from scipy.stats import poisson
 import statistics
 import matplotlib.pyplot as plt
+import numpy as np
 
 # Distribución 1: binomial de parámetros n = 100, p = 0,35.
 def generarDistribucion1(size):
@@ -35,24 +36,20 @@ def ejercicio1(size):
     plt.hist(distribucion, color = 'orange', bins = int(180/5))
     plt.show()
     
-    print("=============================")
-    print("Tamaño:", size)
+    print("==========================================================")
+    print("Tamaño:", size,"\n")
     print("Mediana: ", mediana)
     print("Moda: ", moda)
-    print("\n")
     print("Media empírica de la muestra: ", media)
-    print("Esperanza teórica de la distribución:")
-    print("\n")
     print("Varianza empírica de la muestra: ", varianza)
-    print("Varianza teórica de la distribución:")
-    print("=============================")
+    print("==========================================================")
     
     
 #====================
 #   Ejercicio 1
 #====================
 
-#ejercicio1(size = 100)
+ejercicio1(size = 100)
 #ejercicio1(size = 1000)
 #ejercicio1(size = 10000)
 #ejercicio1(size = 100000)
