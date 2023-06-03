@@ -72,6 +72,8 @@ def ejercicio(dist, size):
     print("==========================================================")
     return
 
+#Recomendamos ejecutar cada linea de forma individual para evitar confusiones. 
+
 #====================
 #   Variables teóricas
 #====================
